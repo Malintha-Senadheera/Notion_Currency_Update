@@ -36,7 +36,7 @@ def update_notion_page(notion_token, page_id, usd_rate, currency):
     data = {
         "properties": {
             #"Date": {"date": {"start": today}},  # Update the date
-            "Name": {"title": [{"text": {"content": f"USD {currency}"}}]},  # Optional: Change the title if needed
+            "Name": {"title": [{"text": {"content": f"USD"}}]},  # Optional: Change the title if needed
             "Rate": {"number": usd_rate},  # Update the exchange rate
         },
     }
