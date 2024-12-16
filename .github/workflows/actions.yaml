@@ -1,9 +1,9 @@
-name: Update Exchange Rate Weekly
+name: Update Exchange Rate Every Minute
 
-# This workflow runs every week on Sunday at 12:00 UTC
+# This workflow runs every minute
 on:
   schedule:
-    - cron: '* * * * *'  # Runs at 12:00 UTC every Sunday
+    - cron: '* * * * *'  # Runs every minute
   workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
