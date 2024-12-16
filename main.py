@@ -35,7 +35,7 @@ def update_notion_page(notion_token, page_id, usd_rate, currency):
     # Create the request payload to update the existing page
     data = {
         "properties": {
-            "Date": {"date": {"start": today}},  # Update the date
+            #"Date": {"date": {"start": today}},  # Update the date
             "Name": {"title": [{"text": {"content": f"USD {currency}"}}]},  # Optional: Change the title if needed
             "Rate": {"number": usd_rate},  # Update the exchange rate
         },
@@ -54,7 +54,7 @@ def update_notion_page(notion_token, page_id, usd_rate, currency):
 # Replace with your actual API keys and IDs
 exchange_rate_api_key = "5d673288126b7c763f6d36c1"  # Replace with your ExchangeRate-API key
 notion_token = "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"  # Replace with your Notion integration token
-notion_page_id = "15e4c5d0c810804a9478f2d001c62099"  # Replace with the page ID of the existing "USD" page
+notion_page_id = "15e4c5d0c810802db2a0fc688eb24b8d"  # Replace with the page ID of the existing "USD" page
 
 # Fetch the exchange rate and update the Notion page
 target_currency = "LKR"  # Set the target currency code (example: "LKR")
