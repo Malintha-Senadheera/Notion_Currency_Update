@@ -3,7 +3,7 @@ name: Update Exchange Rate Every Minute
 # This workflow runs every minute
 on:
   schedule:
-    - cron: '@daily'  # Runs every 5 minutes (due to GitHub's limitations)
+    - cron: '0 0 * * *'  # Runs every 5 minutes (due to GitHub's limitations)
   workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
