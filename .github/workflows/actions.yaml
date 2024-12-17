@@ -1,9 +1,9 @@
-name: Update Exchange Rate Every Minute
+name: Update Exchange Rate Every 12 hours
 
 # This workflow runs every minute
 on:
   schedule:
-    - cron: '0 */12 * * *'  # Runs every 5 minutes (due to GitHub's limitations)
+    - cron: '0 */12 * * *'  # Runs every 12 Hours (due to GitHub's limitations)
   workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
